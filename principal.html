@@ -1,0 +1,58 @@
+<?php 
+session_start();
+
+if(!isset($_SESSION['sesion_iniciada'])){
+	header("location: index.html");
+	exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">	
+	<title>Innovasport</title>
+	<link rel="icon" type="image/png" href="img/icono.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="menuh">
+		<center>
+			<table>
+				<tr>
+					<td>
+						<ul>
+							<li><a href="principal.html">Inicio</a></li>
+							<li><a href="productos.html">Productos </a></li>
+							<li><a href="qs.html">Quienes Somos</a></li>
+							<li><a href="contacto.html">Contacto</a></li>
+							<li><a href="cerrar.php">Salir</a></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</center>
+	</div>
+	<header class="headerp">
+		<span class="titulo">Lo que usa un gran deportista</span>
+		<h1>SportStore</h1>
+	</header>
+	<center>
+		<div class="informacion">
+			<br>
+			<h2>Innovasport</h2>
+			<h2>Has ingresado con exito.</h2>
+			<h2>Bienvenido</h2>
+			<ul>
+				<p>Innovasport te da la bienvenida a su pagina, en ella encontarás una gran variedad de productos relacionados al deporte. En Innovasport nos interesa que tu experiencia deportiva este lo más completa posible, es por eso que ponemos a tu dispoción productos de gran calidad a un buen precio. </p>
+			</ul>
+		</div>
+	</center>
+	<footer>
+			<ul>
+				<li><a href="https://www.twitter.com"><img src="img/twitter.png"  alt="logo twitter" class="logof"></a></li>
+				<li><a href="https://www.facebook.com"><img src="img/fb.png" alt="logo facebook" class="logof"></a></li>
+				<li><a href="https://www.instagram.com"><img src="img/insta.png" alt="logo intagram" class="logof"></a></li>
+			</ul>
+	</footer>
+</body>
+</html>
